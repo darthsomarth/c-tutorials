@@ -71,6 +71,8 @@ int main(int argc, char **argv)
 			}
 		}
 	}
+	if ( close(epfd) == -1)
+		errExit("close");
 	printf("All file descriptors closed; bye\n");
 	exit(EXIT_SUCCESS);
 }
