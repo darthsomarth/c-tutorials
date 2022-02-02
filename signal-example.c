@@ -71,10 +71,8 @@ static void checkRc( const char * fctname, int rc )
 	/* Quit on any error */
 	if ( rc )
 	{
-		if ( rc != TDC_NotConnected ){
 		printf(">>> %s: %s\n", fctname, TDC_perror( rc ));
 		TDC_deInit();
 		exit(EXIT_FAILURE);
-		}
 	}
 }
