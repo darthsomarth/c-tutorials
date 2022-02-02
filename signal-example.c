@@ -1,3 +1,4 @@
+/* Written by Moe */
 #include <signal.h> /* For Ctrl-C handling */
 #include <unistd.h> /* For usleep */
 #include <stdio.h>
